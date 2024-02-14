@@ -22,14 +22,6 @@ The Course Learning Page is a responsive and interactive platform developed usin
 2. Navigate through the sections and subsections using the provided links in the navigation bar.
 3. Use the language dropdown to switch between English and French content.
 
-## Structure
-
-- `index.html`: The main HTML file containing the course content and structure.
-  
-- `style.css`: Custom CSS styles for enhancing the visual presentation.
-  
-- `script.js`: JavaScript file for implementing language-switching functionality.
-
 ## Languages
 
 - **English:** The default language for the course content.
