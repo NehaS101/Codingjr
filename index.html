@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Learning Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS (for icons) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">JavaScript</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Variables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Data Types</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">Functions</a>
+            </li>
+          </ul>
+          <!-- Language selection dropdown -->
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="languageDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Language
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li>
+                <a class="dropdown-item" href="#english" id="english">English</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#french" id="french">French</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Content sections -->
+    <div id="english" data-language="english">
+        <div class="container mt-3">
+            <div id="section1">
+              <h2>1: Introduction to JavaScript</h2>
+              <div id="subsection1-1">
+                <h3>1.1: What is JavaScript?</h3>
+                <p>
+                  JavaScript is a programming language that enables interactive web
+                  pages. It is an essential part of web development, allowing
+                  developers to create dynamic and responsive user interfaces.
+                </p>
+                <p>
+                  JavaScript is commonly used to manipulate the Document Object Model
+                  (DOM), handle events, and communicate with servers through AJAX.
+                </p>
+              
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/B7wHpNUUT4Y"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+      
+              <div id="subsection1-2">
+                <h3>1.2: Why Learn JavaScript?</h3>
+                <p>
+                  Learning JavaScript opens up a world of possibilities for web
+                  development. It allows you to create interactive and dynamic web
+                  applications, making user experiences more engaging.
+                </p>
+                <p>
+                  JavaScript is widely supported by browsers, making it a crucial
+                  skill for front-end developers. Additionally, it is used on the
+                  server side with frameworks like Node.js.
+                </p>
+                
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/9eMvxwk6Op4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+      
+            <div id="section2">
+              <h2>2: Variables in JavaScript</h2>
+              <div id="subsection2-1">
+                <h3>2.1: Introduction to Variables</h3>
+                <p>
+                  In JavaScript, variables are used to store and manage data. They are
+                  like containers that hold values, and these values can be changed
+                  during the execution of a program.
+                </p>
+                <p>
+                  Variables are declared using the <code>var</code>, <code>let</code>,
+                  or <code>const</code> keyword, and they can store various types of
+                  data, including numbers, strings, and objects.
+                </p>
+                
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/y9PscU1uMrA"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+      
+              <div id="subsection2-2">
+                <h3>2.2: Declaring and Assigning Variables</h3>
+                <p>
+                  To use a variable, you need to declare and assign a value to it. The
+                  process involves using the assignment operator (<code>=</code>).
+                </p>
+                <p>For example:</p>
+                <pre>
+      <code>let age; // Declaration
+      age = 25; // Assignment</code></pre>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/v48jV_ljup4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <div id="section3">
+              <h2>3: JavaScript Data Types</h2>
+              <div id="subsection3-1">
+                  <h3>3.1: Primitive Data Types</h3>
+                  <p>JavaScript has several primitive data types, including:</p>
+                  <ul>
+                      <li><strong>Number:</strong> Represents numeric values. It can be an integer or a floating-point number. <br>Example: <code>let age = 25;</code></li>
+                      <li><strong>String:</strong> Represents text. It is enclosed in single or double quotes. <br>Example: <code>let name = 'John';</code></li>
+                      <li><strong>Boolean:</strong> Represents a logical value, either <code>true</code> or <code>false</code>. <br>Example: <code>let isStudent = true;</code></li>
+                      <li><strong>Null:</strong> Represents the intentional absence of any object value.<br> Example: <code>let data = null;</code></li>
+                      <li><strong>Undefined:</strong> Represents a variable that has been declared but not assigned a value.<br> Example: <code>let undefinedVar;</code></li>
+                  </ul>
+                  
+              </div>
+      
+              <div id="subsection3-2">
+                  <h3>3.2: Composite Data Types</h3>
+                  <p>JavaScript also has composite data types, such as:</p>
+                  <ul>
+                      <li><strong>Object:</strong> Represents a collection of key-value pairs.<br> Example: <code>let person = { name: 'Alice', age: 30 };</code></li>
+                      <li><strong>Array:</strong> Represents an ordered list of values. <br>Example: <code>let numbers = [1, 2, 3, 4, 5];</code></li>
+                      <li><strong>Function:</strong> Represents a reusable block of code. Functions can be assigned to variables, passed as arguments, and returned from other functions.</li>
+                  </ul>
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/suMvZWjjKbo" allowfullscreen></iframe>
+                  </div>
+            </div>
+            </div>
+            <div id="section4">
+              <h2>4: JavaScript Functions</h2>
+              <div id="subsection4-1">
+                  <h3>4.1: Introduction to Functions</h3>
+                  <p>Functions in JavaScript are reusable blocks of code that perform a specific task. They are essential for organizing code, promoting reusability, and making programs more modular.</p>
+                  <p>Functions can be declared using the <code>function</code> keyword and can take parameters and return values.</p>
+              </div>
+      
+              <div id="subsection4-2">
+                  <h3>4.2: Function Parameters and Return Values</h3>
+                  <p>Learn how to pass parameters to functions and handle return values. Understanding these concepts is crucial for effective function usage.</p>
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5kY4Th53w70" allowfullscreen></iframe>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="french" data-language="french" style="display: none;">
+        <div class="container mt-3">
+            <div id="section1">
+                <h2>1: Introduction à JavaScript</h2>
+                <div id="subsection1-1">
+                    <h3>1.1: Qu'est-ce que JavaScript ?</h3>
+                    <p>
+                        JavaScript est un langage de programmation qui permet des pages web interactives. Il est une partie essentielle du développement web, permettant aux développeurs de créer des interfaces utilisateur dynamiques et réactives.
+                    </p>
+                    <p>
+                        JavaScript est couramment utilisé pour manipuler le Modèle d'Objet de Document (DOM), gérer les événements et communiquer avec les serveurs via AJAX.
+                    </p>
+        
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/B7wHpNUUT4Y"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+        
+                <div id="subsection1-2">
+                    <h3>1.2: Pourquoi apprendre JavaScript ?</h3>
+                    <p>
+                        Apprendre JavaScript ouvre un monde de possibilités pour le développement web. Il vous permet de créer des applications web interactives et dynamiques, rendant les expériences utilisateur plus engageantes.
+                    </p>
+                    <p>
+                        JavaScript est largement pris en charge par les navigateurs, en faisant une compétence cruciale pour les développeurs front-end. De plus, il est utilisé côté serveur avec des frameworks tels que Node.js.
+                    </p>
+        
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/9eMvxwk6Op4"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="section2">
+                <h2>2: Variables en JavaScript</h2>
+                <div id="subsection2-1">
+                    <h3>2.1: Introduction aux variables</h3>
+                    <p>
+                        En JavaScript, les variables sont utilisées pour stocker et gérer des données. Elles sont comme des conteneurs qui contiennent des valeurs, et ces valeurs peuvent être modifiées pendant l'exécution d'un programme.
+                    </p>
+                    <p>
+                        Les variables sont déclarées à l'aide des mots-clés <code>var</code>, <code>let</code> ou <code>const</code>, et elles peuvent stocker différents types de données, y compris des nombres, des chaînes de caractères et des objets.
+                    </p>
+        
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/y9PscU1uMrA"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+        
+                <div id="subsection2-2">
+                    <h3>2.2: Déclaration et attribution de variables</h3>
+                    <p>
+                        Pour utiliser une variable, vous devez la déclarer et lui attribuer une valeur. Le processus implique l'utilisation de l'opérateur d'attribution (<code>=</code>).
+                    </p>
+                    <p>Par exemple :</p>
+                    <pre>
+                        <code>let age; // Déclaration
+        age = 25; // Attribution</code>
+                    </pre>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/v48jV_ljup4"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="section3">
+                <h2>3: Types de données JavaScript</h2>
+                <div id="subsection3-1">
+                    <h3>3.1: Types de données primitives</h3>
+                    <p>JavaScript a plusieurs types de données primitifs, notamment :</p>
+                    <ul>
+                        <li><strong>Nombre :</strong> Représente des valeurs numériques. Il peut s'agir d'un entier ou d'un nombre à virgule flottante. <br>Exemple : <code>let age = 25;</code></li>
+                        <li><strong>Chaîne de caractères :</strong> Représente du texte. Elle est encadrée par des guillemets simples ou doubles. <br>Exemple : <code>let name = 'John';</code></li>
+                        <li><strong>Booléen :</strong> Représente une valeur logique, soit <code>true</code> soit <code>false</code>. <br>Exemple : <code>let isStudent = true;</code></li>
+                        <li><strong>Null :</strong> Représente l'absence intentionnelle de toute valeur d'objet. <br>Exemple : <code>let data = null;</code></li>
+                        <li><strong>Indéfini :</strong> Représente une variable qui a été déclarée mais n'a pas reçu de valeur. <br>Exemple : <code>let undefinedVar;</code></li>
+                    </ul>
+        
+                </div>
+        
+                <div id="subsection3-2">
+                    <h3>3.2: Types de données composites</h3>
+                    <p>JavaScript a également des types de données composites, tels que :</p>
+                    <ul>
+                        <li><strong>Objet :</strong> Représente une collection de paires clé-valeur. <br>Exemple : <code>let person = { name: 'Alice', age: 30 };</code></li>
+                        <li><strong>Tableau :</strong> Représente une liste ordonnée de valeurs. <br>Exemple : <code>let numbers = [1, 2, 3, 4, 5];</code></li>
+                        <li><strong>Fonction :</strong> Représente un bloc de code réutilisable. Les fonctions peuvent être assignées à des variables, passées en tant qu'arguments et renvoyées par d'autres fonctions.</li>
+                    </ul>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/suMvZWjjKbo" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="section4">
+                <h2>4: Fonctions JavaScript</h2>
+                <div id="subsection4-1">
+                    <h3>4.1: Introduction aux fonctions</h3>
+                    <p>Les fonctions en JavaScript sont des blocs de code réutilisables qui effectuent une tâche spécifique. Elles sont essentielles pour organiser le code, favoriser la réutilisabilité et rendre les programmes plus modulaires.</p>
+                    <p>Les fonctions peuvent être déclarées à l'aide du mot-clé <code>function</code> et peuvent prendre des paramètres et renvoyer des valeurs.</p>
+                </div>
+        
+                <div id="subsection4-2">
+                    <h3>4.2: Paramètres de fonction et valeurs de retour</h3>
+                    <p>Apprenez à transmettre des paramètres aux fonctions et à gérer les valeurs de retour. Comprendre ces concepts est crucial pour une utilisation efficace des fonctions.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5kY4Th53w70" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      // Function to switch language to English
+      function switchToEnglish() {
+        document.querySelectorAll('[data-language="french"]').forEach((element) => {
+          element.style.display = 'none';
+        });
+        document.querySelectorAll('[data-language="english"]').forEach((element) => {
+          element.style.display = 'block';
+        });
+      }
+
+      // Function to switch language to French
+      function switchToFrench() {
+        document.querySelectorAll('[data-language="english"]').forEach((element) => {
+          element.style.display = 'none';
+        });
+        document.querySelectorAll('[data-language="french"]').forEach((element) => {
+          element.style.display = 'block';
+        });
+      }
+
+      //(English by default)
+      switchToEnglish();
+
+      // Event listener for language dropdown
+      document.getElementById('english').addEventListener('click', switchToEnglish);
+      document.getElementById('french').addEventListener('click', switchToFrench);
+    </script>
+  </body>
+</html>
