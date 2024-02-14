@@ -46,6 +46,4 @@ The Course Learning Page is a responsive and interactive platform developed usin
 
 Feel free to contribute to the project by raising issues or submitting pull requests.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
